@@ -11,10 +11,19 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #f0f0f0;
+            animation: fadeInOut 4s infinite;
+            opacity: 0;
         }
         img {
             max-width: 100%;
             height: auto;
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            25% { opacity: 1; }
+            75% { opacity: 1; }
+            100% { opacity: 0; }
         }
     </style>
 </head>
